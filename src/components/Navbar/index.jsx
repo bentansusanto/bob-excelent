@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import LogoBob from '../../assets/logo-bob.webp'
 import { HashLink as Link } from 'react-router-hash-link';
 import {IoClose,IoMenu} from 'react-icons/io5'
+import {BiChevronLeftCircle} from 'react-icons/bi' 
 
 const mediaQuery = window.matchMedia("(max-width: 600px)");
 
@@ -14,11 +15,12 @@ const links = [
 
 const Navbar = () => {
     const [matches, setMatches] = useState(mediaQuery.matches);
-    const [closePromo, setClosePromo] = useState(false)
     const [openNav, setOpenNav] = useState(false)
+    const message = 'Halo, saya mau bertanya untuk paket UTBK'
+    const phoneNumber = '+6289604276162'
 
     const handleClosePromo = () => {
-        setClosePromo(!closePromo)
+        window.open('https://wa.me/' + phoneNumber + '?text=' + encodeURIComponent(message));
     }
 
     const handleOpenNav = () => {
@@ -41,22 +43,22 @@ const Navbar = () => {
     <div>
         {
             matches ? 
-            (<div>
-                <div className={`${closePromo ? "hidden" : "bg-orange-500 py-2"} text-white space-x-10 flex items-center px-3`}>
-                    <p className='text-center text-[13px] font-semibold'>
+            (<div className='fixed top-0 z-30'>
+                <div className="bg-orange-500 bg-gradient-to-r from-red-600 to-orange-400 py-2 text-white space-x-10 flex items-center px-5">
+                    <p className='text-[14px] font-semibold'>
                         Khusus untuk Kamu yang Fokus Siap Mengikuti SNBT 2023!  
                     </p>
-                    <IoClose className='text-2xl'onClick={handleClosePromo}/>
+                    <BiChevronLeftCircle className="text-4xl -rotate-180" onClick={handleClosePromo}/>
                     </div>
-                <div>
+                <div className='relative'>
                     <div className='py-3 px-5 bg-white shadow-md flex justify-between items-center'>
                         <img src={LogoBob} alt="logo bob" className='w-14'/>
                         {
-                            openNav ? (<IoClose className='text-2xl'/>) : (<IoMenu className='text-2xl'/>)
+                            openNav ? (<IoClose onClick={() => setOpenNav(false)} className='text-2xl'/>) : (<IoMenu onClick={handleOpenNav} className='text-2xl'/>)
                         }
                         
                     </div>
-                <ul>
+                <ul onClick={() => setOpenNav(false)} className={`${openNav ? "top-16" : "top-[-300px]"} bg-white shadow-md p-3 w-screen space-y-5 absolute`}>
                     {
                         links.map((val, idx) => (
                             <li key={idx}>
