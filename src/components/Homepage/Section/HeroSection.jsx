@@ -8,7 +8,7 @@ const HeroSection = ({matches}) => {
         {
             matches? 
             (<div className='bg-gradient-to-br from-blue-700 to-cyan-400 w-screen h-screen relative'>
-              <div className='px-5 pt-40 text-white'>
+              <div className='px-5 pt-44 text-white'>
                 <h1 className='text-[26px] font-semibold'>Mudahnya Masuk PTN Favorit Tanpa Harus Berlama-lama Belajar dengan Program Jaminan PTN dari Prof. Bob Excellent!</h1>
                 <img src={BgHeroSection} alt="bg hero section" className='absolute bottom-0'/>
               </div>

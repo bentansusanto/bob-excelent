@@ -9,3 +9,7 @@
 body{
   @apply overflow-x-hidden font-poppins
 }
+
+p{
+  @apply text-[15px]
+}

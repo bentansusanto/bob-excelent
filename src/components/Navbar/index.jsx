@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import LogoBob from '../../assets/logo-bob.webp'
+import LogoBob from '../../assets/logo-bobexcelent.webp'
 import { HashLink as Link } from 'react-router-hash-link';
 import {IoClose,IoMenu} from 'react-icons/io5'
 import {BiChevronLeftCircle} from 'react-icons/bi' 
@@ -48,7 +48,7 @@ const Navbar = () => {
                     <p className='text-[14px] font-semibold'>
                         Khusus untuk Kamu yang Fokus Siap Mengikuti SNBT 2023!  
                     </p>
-                    <BiChevronLeftCircle className="text-4xl -rotate-180" onClick={handleClosePromo}/>
+                    <BiChevronLeftCircle className="text-5xl -rotate-180" onClick={handleClosePromo}/>
                     </div>
                 <div className='relative'>
                     <div className='py-3 px-5 bg-white shadow-md flex justify-between items-center'>
