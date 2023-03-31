@@ -20,7 +20,7 @@ const ProblemSection = ({matches}) => {
                     <div className='grid grid-cols-1 gap-5 justify-items-center'>
                         {
                             ListProblem.slice(0, showMore ? ListProblem.length : 3).map((val, idx) => (
-                                <div key={idx} className='bg-gray-100 p-3 flex items-center space-x-3'>
+                                <div key={idx} className='bg-white rounded-md shadow-md p-3 flex items-center space-x-3'>
                                     <p>{val.list}</p>
                                 </div>
 
