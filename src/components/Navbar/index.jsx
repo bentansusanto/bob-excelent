@@ -8,9 +8,11 @@ const mediaQuery = window.matchMedia("(max-width: 600px)");
 
 const links = [
     {section : 'About Us', link : '/#about'},
-    {section : 'About Us', link : '/#about'},
-    {section : 'About Us', link : '/#about'},
-    {section : 'About Us', link : '/#about'}
+    {section : 'Problem', link : '/#about'},
+    {section : 'Service', link : '/#about'},
+    {section : 'Benefit', link : '/#about'},
+    {section : 'Package', link : '/#about'},
+    {section : 'Testimoni', link : '/#about'}
 ]
 
 const Navbar = () => {
@@ -52,13 +54,14 @@ const Navbar = () => {
                     </div>
                 <div className='relative'>
                     <div className='py-3 px-5 bg-white shadow-md flex justify-between items-center'>
-                        <img src={LogoBob} alt="logo bob" className='w-14'/>
+                        <img src={LogoBob} alt="logo bob" className='w-14 opacity-0'/>
+                        {/* <h4 className='font-bold'>Prof Excelent</h4> */}
                         {
                             openNav ? (<IoClose onClick={() => setOpenNav(false)} className='text-2xl'/>) : (<IoMenu onClick={handleOpenNav} className='text-2xl'/>)
                         }
                         
                     </div>
-                <ul onClick={() => setOpenNav(false)} className={`${openNav ? "top-16" : "top-[-300px]"} bg-white shadow-md p-3 w-screen space-y-5 absolute`}>
+                <ul onClick={() => setOpenNav(false)} className={`${openNav ? "top-16" : "top-[-500px]"} bg-white shadow-md p-3 w-screen space-y-5 absolute`}>
                     {
                         links.map((val, idx) => (
                             <li key={idx}>
@@ -66,6 +69,9 @@ const Navbar = () => {
                             </li>
                         ))
                     }
+                    <div className='pt-5'>
+                        <button className='w-full bg-orange-500 py-2 rounded-full text-white font-semibold'>Contact Us</button>
+                    </div>
                 </ul>
                 </div>
             </div>) : 
