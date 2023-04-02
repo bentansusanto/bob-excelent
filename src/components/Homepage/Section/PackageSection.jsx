@@ -32,7 +32,7 @@ const PackageSection = ({ matches }) => {
                     className="rounded-t-2xl"
                   />
                   <div className="absolute inset-1 top-2 px-3">
-                    <h4 className="font-bold text-[18px] text-white">
+                    <h4 className="font-bold text-[20px] text-white">
                       {val.title}
                     </h4>
                   </div>
@@ -77,7 +77,7 @@ const PackageSection = ({ matches }) => {
                   <div className={`${open ? "bg-white p-3 fixed top-36" : "hidden"}  w-full h-full z-30 `}>
                         <div>
                             <div className="flex space-x-5 justify-between items-center">
-                                <h5 className="font-semibold">{listPackage[active]?.title}</h5>
+                                <h5 className="font-bold text-[20px]">{listPackage[active]?.title}</h5>
                                 <IoClose onClick={() => setOpen(false)} className="text-2xl"/>
                             </div>
                             <div className="mt-6 space-y-2 h-[27rem] py-1 overflow-y-scroll scroll-smooth">
