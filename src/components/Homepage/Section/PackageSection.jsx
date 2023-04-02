@@ -74,7 +74,7 @@ const PackageSection = ({ matches }) => {
             ))}
           </div>
                 <div className={`${open ? "bg-black opacity-60" : "hidden"} fixed top-0 z-30 w-screen h-36`}/>
-                  <div className={`${open ? "bg-white p-3 fixed top-36" : "hidden"}  w-full h-screen z-30 `}>
+                  <div className={`${open ? "bg-white p-3 fixed top-36" : "hidden"}  w-full h-full z-30 `}>
                         <div>
                             <div className="flex space-x-5 justify-between items-center">
                                 <h5 className="font-semibold">{listPackage[active]?.title}</h5>
