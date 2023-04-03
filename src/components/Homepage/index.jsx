@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import AboutPackage from './Section/AboutPackage';
+import AnotherTestimoni from './Section/AnotherTestimoni';
 import BenefitSection from './Section/BenefitSection';
 import HeroSection from './Section/HeroSection';
 import PackageSection from './Section/PackageSection';
@@ -37,6 +38,7 @@ const Homepage = () => {
       <PackageSection matches={matches}/>
       <BenefitSection matches={matches}/>
       <TestimoniSection matches={matches}/>
+      <AnotherTestimoni matches={matches}/>
       <PromosiSection matches={matches}/>
     </div>
   )
