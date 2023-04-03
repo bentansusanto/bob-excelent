@@ -69,21 +69,9 @@ const PackageSection = ({ matches }) => {
                   </div>
                   <div className="pt-6">
                      {/* Price */}
-                    <div className="flex space-x-3">
-                        {/* Diskon */}
-                        <div className="bg-orange-100 rounded-md p-3">
-                            <p className="font-semibold text-orange-500">Diskon 50%</p>
-                        </div>
-                        <div className="space-y-2">
-                            <div className="flex space-x-2">
-                                <p className="line-through text-gray-400 text-[.8rem]">Rp900.000</p>
-                                <p className="font-bold text-red-500">Rp450.000</p>
-                            </div>
-                            <p className="text-[.8rem] text-blue-500 font-semibold">Hanya Rp50.000/bulan</p>
-                        </div>
-                    </div>
+                          <p className="text-red-500 text-[16px] font-bold mx-2">{val.price}</p>      
                     {/* Button */}
-                    <div className="flex justify-between pt-4">
+                    <div className="flex justify-between pt-6">
                         <button onClick={() => handleActive(idx)} className={` ${active === idx ? "active" : ""} border-2 border-gray-300 font-medium px-5 py-2 rounded-full`}>Lihat Detail</button>
                         <button onClick={() => handleOrder(val.title)} className="bg-orange-500 px-5 py-2 font-medium text-white rounded-full shadow-md">Beli Paket</button>
                     </div>

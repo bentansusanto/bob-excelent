@@ -6,6 +6,7 @@ export const listPackage = [
         jenis_package2 : null,
         launch_package : "Online Class Interaktif Dimulai April 2023",
         launch_package1 : null,
+        price : "Rp100.000",
         fasilitas : [
             "20 kali Live Class Online persiapan SNBT",
             "Class Online berfokus pada pembahasan soa-soal Tes Literasi,Penalaran dan Skolastik",
@@ -23,7 +24,7 @@ export const listPackage = [
             "Laporan belajar bulanan dan grafik tryout "
         ],
         fasilitas1 : [
-            "100 kali Live Class Online persiapan SNBT",
+            "20 kali Live Class Online persiapan SNBT",
             "Class Online berfokus pada pembahasan soa-soal Tes Literasi,Penalaran dan Skolastik",
             "Kelas online interaktif tanya jawab dengan tutor",
             "200 jam total live kelas online",
@@ -40,13 +41,14 @@ export const listPackage = [
     },
     {   
         title : "Program Privat SNBT",
-        jenis_package : "Privat UTBK SNBT 40 Sesi",
+        jenis_package : "Privat UTBK SNBT 20 Sesi",
         jenis_package1 : "Privat UTBK SNBT 20 Sesi",
-        jenis_package2 : "Privat UTBK SNBT 10 Sesi",
+        jenis_package2 : "Privat UTBK SNBT 20 Sesi",
         launch_package : "Les privat intensif guru ke rumah",
         launch_package1 : "Les privat intensif guru ke rumah",
+        price : "Rp1.350.000 s/d Rp4.000.000",
         fasilitas : [
-            "40 kali belajar privat intensif 1 guru 1 siswa",
+            "20 kali belajar privat intensif 1 guru 1 siswa",
             "Tersedia guru kerumah atau belajar online",
             "Bisa atur jadwal sendiri (Hari, Jam, Tanggal)",
             "Bisa request pengajar",
@@ -74,7 +76,7 @@ export const listPackage = [
             "Bisa Trial Dulu"
         ],
         fasilitas2 : [
-            "10 kali belajar privat intensif 1 guru 1 siswa",
+            "20 kali belajar privat intensif 1 guru 1 siswa",
             "Tersedia guru kerumah atau belajar online",
             "Bisa atur jadwal sendiri (Hari, Jam, Tanggal)",
             "Bisa request pengajar",
@@ -90,13 +92,14 @@ export const listPackage = [
     },
     {   
         title : "Program Super Intensif SNBT",
-        jenis_package : "Super Intensif SNBT 30 Sesi",
-        jenis_package1 : "Super Intensif SNBT 20 Sesi",
-        jenis_package2 : "Super Intensif SNBT 30 Sesi",
+        jenis_package : "Super Intensif SNBT 10 Sesi",
+        jenis_package1 : "Super Intensif SNBT 10 Sesi",
+        jenis_package2 : "Super Intensif SNBT 10 Sesi",
         launch_package : "Les privat intensif guru ke rumah",
         launch_package1 : "Intensif guru online",
+        price : "Rp680.000 s/d Rp1.500.000",
         fasilitas : [
-            "30 kali belajar privat intensif 1 guru 1 siswa",
+            "10 kali belajar privat intensif 1 guru 1 siswa",
             "Tersedia guru kerumah atau belajar online",
             "Bisa atur jadwal sendiri (Hari, Jam, Tanggal)",
             "Bisa request pengajar",
@@ -110,7 +113,7 @@ export const listPackage = [
             "Bisa Trial Dulu"
         ],
         fasilitas1 : [
-            "20 kali belajar privat intensif 1 guru 1 siswa",
+            "10 kali belajar privat intensif 1 guru 1 siswa",
             "Tersedia guru kerumah atau belajar online",
             "Bisa atur jadwal sendiri (Hari, Jam, Tanggal)",
             "Bisa request pengajar",
@@ -124,7 +127,7 @@ export const listPackage = [
             "Bisa Trial Dulu"
         ],
         fasilitas2 : [
-            "30 kali belajar privat intensif 1 guru 1 siswa",
+            "10 kali belajar privat intensif 1 guru 1 siswa",
             "Tersedia guru kerumah atau belajar online",
             "Bisa atur jadwal sendiri (Hari, Jam, Tanggal)",
             "Bisa request pengajar",
