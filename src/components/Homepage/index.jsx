@@ -7,6 +7,7 @@ import ProblemSection from './Section/ProblemSection';
 import PromosiSection from './Section/PromosiSection';
 import ServiceSection from './Section/ServiceSection';
 import TestimoniSection from './Section/TestimoniSection';
+import UniversitasSection from './Section/UniversitasSection';
 
 const mediaQuery = window.matchMedia("(max-width: 600px)");
 
@@ -31,6 +32,7 @@ const Homepage = () => {
       <HeroSection matches={matches}/>
       <ProblemSection matches={matches}/>
       <AboutPackage matches={matches}/>
+      <UniversitasSection matches={matches}/>
       <ServiceSection matches={matches}/>
       <PackageSection matches={matches}/>
       <BenefitSection matches={matches}/>

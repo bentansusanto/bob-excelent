@@ -43,7 +43,7 @@ const PackageSection = ({ matches }) => {
           </h2>
           <div className="mt-5 grid grid-cols-1 w-[18.5rem] mx-auto gap-10">
             {listPackage.map((val, idx) => (
-              <div key={idx} onClick={() => handleOrder(val.title)}>
+              <div key={idx}>
                 <div className="relative">
                   <img
                     src={BgPackage}
@@ -85,7 +85,7 @@ const PackageSection = ({ matches }) => {
                     {/* Button */}
                     <div className="flex justify-between pt-4">
                         <button onClick={() => handleActive(idx)} className={` ${active === idx ? "active" : ""} border-2 border-gray-300 font-medium px-5 py-2 rounded-full`}>Lihat Detail</button>
-                        <button className="bg-orange-500 px-5 py-2 font-medium text-white rounded-full shadow-md">Beli Paket</button>
+                        <button onClick={() => handleOrder(val.title)} className="bg-orange-500 px-5 py-2 font-medium text-white rounded-full shadow-md">Beli Paket</button>
                     </div>
                   </div>
                 </div>
