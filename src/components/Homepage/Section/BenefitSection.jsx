@@ -4,7 +4,7 @@ import { listBenefit } from '../../../Data/ListBenefit'
 
 const BenefitSection = ({matches}) => {
   return (
-    <div className='mt-40'>
+    <div className='mt-40' id='benefit'>
       {
         matches ? 
         // Mobile View

@@ -13,3 +13,8 @@ body{
 p{
   @apply text-[15px]
 }
+
+.bg-promo-mobile{
+  background: url('./assets/bg-promo.svg');
+  @apply w-screen  bg-cover py-5
+}

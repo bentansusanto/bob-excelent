@@ -4,7 +4,7 @@ import BgHeroSection from '../../../assets/bg-herosection.webp'
 
 const HeroSection = ({matches}) => {
   return (
-    <div id='about' className='overflow-x-hidden'>
+    <div className='overflow-x-hidden'>
         {
             matches? 
             (<div className='bg-gradient-to-br from-blue-700 to-cyan-400 w-screen h-screen relative'>

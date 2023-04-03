@@ -8,11 +8,11 @@ const mediaQuery = window.matchMedia("(max-width: 600px)");
 
 const links = [
     {section : 'About Us', link : '/#about'},
-    {section : 'Problem', link : '/#about'},
-    {section : 'Service', link : '/#about'},
-    {section : 'Benefit', link : '/#about'},
-    {section : 'Package', link : '/#about'},
-    {section : 'Testimoni', link : '/#about'}
+    {section : 'Problem', link : '/#problem'},
+    {section : 'Service', link : '/#service'},
+    {section : 'Benefit', link : '/#benefit'},
+    {section : 'Package', link : '/#package'},
+    {section : 'Testimoni', link : '/#testimoni'}
 ]
 
 const Navbar = () => {
@@ -69,7 +69,7 @@ const Navbar = () => {
                             </li>
                         ))
                     }
-                    <div className='pt-5'>
+                    <div onClick={handleClosePromo} className='pt-5'>
                         <button className='w-full bg-orange-500 py-2 rounded-full text-white font-semibold'>Contact Us</button>
                     </div>
                 </ul>

@@ -4,6 +4,7 @@ import BenefitSection from './Section/BenefitSection';
 import HeroSection from './Section/HeroSection';
 import PackageSection from './Section/PackageSection';
 import ProblemSection from './Section/ProblemSection';
+import PromosiSection from './Section/PromosiSection';
 import ServiceSection from './Section/ServiceSection';
 import TestimoniSection from './Section/TestimoniSection';
 
@@ -34,6 +35,7 @@ const Homepage = () => {
       <PackageSection matches={matches}/>
       <BenefitSection matches={matches}/>
       <TestimoniSection matches={matches}/>
+      <PromosiSection matches={matches}/>
     </div>
   )
 }

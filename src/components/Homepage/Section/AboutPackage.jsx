@@ -8,7 +8,7 @@ const about = {
 
 const AboutPackage = ({matches}) => {
   return (
-    <div className='mt-40'>
+    <div className='mt-40' id='about'>
         {
             matches ? 
             // Mobile View
