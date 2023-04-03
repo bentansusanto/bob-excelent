@@ -19,7 +19,7 @@ const Navbar = () => {
     const [matches, setMatches] = useState(mediaQuery.matches);
     const [openNav, setOpenNav] = useState(false)
     const message = 'Halo, saya mau bertanya untuk paket UTBK'
-    const phoneNumber = '+6289604276162'
+    const phoneNumber = "+628812518233"
 
     const handleClosePromo = () => {
         window.open('https://wa.me/' + phoneNumber + '?text=' + encodeURIComponent(message));

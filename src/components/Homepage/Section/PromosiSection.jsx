@@ -3,7 +3,7 @@ import '../../../index.css'
 
 const PromosiSection = ({matches}) => {
   const message = 'Halo, saya mau bertanya untuk paket UTBK'
-  const phoneNumber = '+6289604276162'
+  const phoneNumber = "+628812518233"
 
   const handleClosePromo = () => {
       window.open('https://wa.me/' + phoneNumber + '?text=' + encodeURIComponent(message));
